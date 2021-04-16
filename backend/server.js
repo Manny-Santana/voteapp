@@ -4,6 +4,10 @@ const app = express()
 const mongoose = require('mongoose');
 const port = 3000
 
+const mongoUsername; //voteapp.com or ARES123
+const dbPassword;  
+const mongoURI;
+
 
 
 app.get('/', (req, res) => {
@@ -12,5 +16,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-  console.log(`\n ${process.env.TEST}`)
+  
 })
